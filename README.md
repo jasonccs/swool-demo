@@ -1,10 +1,10 @@
 
-##swoole 运行
+## swoole 运行
     php cli 模式运行 server.php (服务端) 即 php server.php
     
     index.html(客户端)
    
-##swoole设置配置
+## swoole设置配置
 
     $ws->set(
         array(
@@ -17,6 +17,6 @@
             'heartbeat_idle_time' => 600,
         )
     );
-##查看端口情况
+## 查看端口情况
 
     netstat -nutpl
