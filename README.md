@@ -17,3 +17,6 @@
             'heartbeat_idle_time' => 600,
         )
     );
+#查看端口情况
+
+    netstat -nutpl
