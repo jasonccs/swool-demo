@@ -5,7 +5,7 @@
     index.html(客户端)
    
 ## swoole设置配置
-    ```php
+   ```php
     $ws->set(
         array(
             'daemonize' => true,      // 是否是守护进程
@@ -17,7 +17,7 @@
             'heartbeat_idle_time' => 600,
         )
     );
-    ```
+   ```
 ## 查看端口情况
 
     netstat -nutpl
