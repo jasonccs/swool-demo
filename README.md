@@ -1,10 +1,11 @@
 # swoole-demo 
 
-    php cli 模式运行 server.php (服务端)
+    php cli 模式运行 server.php (服务端) 即 php server.php
     
     index.html(客户端)
    
 #swoole设置配置
+
     $ws->set(
         array(
             'daemonize' => true,      // 是否是守护进程
