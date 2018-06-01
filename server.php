@@ -1,5 +1,7 @@
 <?php
 $ws = new swoole_websocket_server("0.0.0.0", 9502);
+  //$ws = new swoole_websocket_server("0.0.0.0", 9502,SWOOLE_PROCESS, SWOOLE_SOCK_TCP | SWOOLE_SSL); // 用户https 访问
+
 
 // 设置配置
 $ws->set(
@@ -11,6 +13,9 @@ $ws->set(
         // 心跳检测的设置，自动踢掉掉线的fd
         'heartbeat_check_interval' => 5,
         'heartbeat_idle_time' => 600,
+        //'ssl_cert_file' => '/usr/local/nginx/ssl/www.good100.top/www.good100.top.crt', // 用户https 访问
+        //'ssl_key_file' => '/usr/local/nginx/ssl/www.good100.top/www.good100.top.key', //用户https 访问
+
     )
 );
 
