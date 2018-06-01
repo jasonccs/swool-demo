@@ -6,6 +6,8 @@
     <script type="text/javascript">
         if(window.WebSocket){
             var webSocket = new WebSocket("ws://192.168.2.133:9502");
+            //var webSocket = new WebSocket("wss://www.good100.top:9502"); //用于https 访问 是能是授权的ssl证书的域名
+            
             webSocket.onopen = function (event) {
                 //webSocket.send("Hello,WebSocket!");
             };
